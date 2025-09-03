@@ -21,7 +21,7 @@ A full-stack web application for booking movie tickets, built with Node.js, Expr
 ## How Does it Look
 
  **index_page**
-  ![index_page](views/images/index (2).png)
+  ![index_page](views/images/index.png)
 
  **login_page**
   ![Admin_login](views/images/AdminLogin.png)
