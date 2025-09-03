@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seat Selection</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css"> 
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <div class="mb-6">
+      <div class="w-full h-6 bg-gray-300 rounded-t-full shadow-inner mb-2"></div>
+      <p class="text-center text-gray-500 text-sm italic">Screen This Way</p>
+    </div>
+     <div class="flex justify-around text-sm text-gray-700 mb-6">
+      <div class="flex items-center space-x-1">
+        <div class="w-4 h-4 bg-green-500 rounded"></div>
+        <span>Available</span>
+      </div>
+      <div class="flex items-center space-x-1">
+        <div class="w-4 h-4 bg-red-500 rounded"></div>
+        <span>Booked</span>
+      </div>
+      <div class="flex items-center space-x-1">
+        <div class="w-4 h-4 bg-blue-500 rounded"></div>
+        <span>Selected</span>
+      </div>
+    </div>
+    <h2 class="text-xl font-bold text-gray-800 mb-6">Select Your Seat</h2>
+    <div id="seatLayout" class="grid grid-cols-6 gap-2 mb-4">
+      <div id="loading" class="col-span-6 text-center text-gray-600">Loading seats...</div>
+    </div>
+    <button id="bookButton" disabled class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition disabled:bg-gray-400">Book Selected Seat</button>
+  </div>
+  <div class="gap-6 mt-6 flex center justify-center">
+      <a
+        href="movies.html"
+        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-white-700 transition transform hover:scale-105 "
+      >
+        previous
+      </a>
+    </div>
+  <script src="/js/booking.js"></script> 
+</body>
+</html>

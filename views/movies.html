@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    body {
+      background-image: url('./images/photo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-xl font-bold text-gray-800">Available Movies</h2>
+      <div class="flex gap-4">
+      <a
+        href="booked-tickets.html"
+        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-white-700 transition transform hover:scale-105"
+      >
+        view booked tickets
+      </a>
+      <a
+        href="logout.html"
+        class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-white-700 transition transform hover:scale-105"
+      >
+        Logout
+      </a>
+      </div>
+    </div>
+    <div id="movieList" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+    <div class="gap-4 mt-4"><marquee>Note : Tickets booked once cannot be cancelled later..... make re-check once show-timing's and movie details</marquee></div>
+  </div>
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg gap-6 mt-8">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-xl font-bold text-gray-800">Upcoming Releases</h2>
+    </div>
+     <div class='bg-gray-50 p-4 rounded-lg shadow flex justify-between items-center'>
+        <h4 class="text-lg font-semibold text-gray-800">Title :Elephant Whispers</h4>
+        <h4 class="text-lg font-semibold text-gray-800">Languages :English</h4>
+        <h4 class="text-lg font-semibold text-gray-800">In Cinemas Soon...</h4>
+        <input type="submit" id="notify" value="Notify Me" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">
+    </div>
+    <div class='bg-gray-50 p-4 rounded-lg shadow flex justify-between items-center gap-4 mt-4'>
+        <h4 class="text-lg font-semibold text-gray-800">Title :Parasites</h4>
+        <h4 class="text-lg font-semibold text-gray-800">Languages :English</h4>
+        <h4 class="text-lg font-semibold text-gray-800">In Cinemas Soon...</h4>
+        <input type="submit" name="notify" value="Notify Me" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">
+    </div>
+  
+  <script src="/js/movies.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logged Out</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">You Have Been Logged Out</h2>
+    <p class="text-gray-600 mb-6">Thank you for using Movie Ticket Booking. Your session has been ended.</p>
+    <a
+      href="index.html"
+      class="inline-block bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105"
+    >
+      Return to Home
+    </a>
+  </div>
+  <script>
+    
+    localStorage.removeItem('token');
+    localStorage.removeItem('selectedMovie');
+    localStorage.removeItem('bookingId');
+  </script>
+</body>
+</html>
